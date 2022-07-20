@@ -1,4 +1,5 @@
 GUI r
+DELAY 50
 STRING powershell start-process cmd -verb runas
 ENTER
 DELAY 1200
